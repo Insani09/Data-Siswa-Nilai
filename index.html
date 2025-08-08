@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Data Siswa & Nilai</title>
 </head>
 <body>
-    
+    <script>
+        const nama_lengkap_siswa = "Insani Aura Ramadhani";
+        console.log("Nama Lengkap Siswa:", nama_lengkap_siswa);
+        const usia_siswa = 15;
+        console.log("Usia Siswa:", usia_siswa);
+        status_siswa = true;
+        console.log("Status Siswa:", status_siswa);
+        console.log("");
+
+        const nilaiTugas = 85;
+        const nilaiUTS   = 78;
+        const nilaiUAS   = 90;
+
+        const nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+        console.log("Nilai Akhir: " + nilaiAkhir);
+
+        const statusKelulusan = (nilaiAkhir >= 75)? "Lulus": "Remedial";
+        console.log("Status Kelulusan: " + statusKelulusan);
+
+
+    </script>
 </body>
 </html>
