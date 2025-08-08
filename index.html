@@ -7,14 +7,19 @@
 </head>
 <body>
     <script>
+        // SOAL NOMOR 1
+        console.log("");
+        console.log("------------------------");
+        console.log("Data Siswa dan Nilai");
+        console.log("------------------------");
         const nama_lengkap_siswa = "Insani Aura Ramadhani";
         console.log("Nama Lengkap Siswa:", nama_lengkap_siswa);
         const usia_siswa = 15;
         console.log("Usia Siswa:", usia_siswa);
         status_siswa = true;
         console.log("Status Siswa:", status_siswa);
-        console.log("");
-
+        console.log("------------------------");
+        // SOAL NOMOR 2
         const nilaiTugas = 85;
         const nilaiUTS   = 78;
         const nilaiUAS   = 90;
@@ -22,8 +27,18 @@
         const nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
         console.log("Nilai Akhir: " + nilaiAkhir);
 
-        const statusKelulusan = (nilaiAkhir >= 75)? "Lulus": "Remedial";
+        
+        //SOAL NOMOR 3
+          if (nilaiAkhir >= 75) {
+        statusKelulusan = "Lulus";
+         } else {
+        statusKelulusan = "Remedial";
+        }
+
+        console.log("Nilai Rata Rata: " + nilaiAkhir);
         console.log("Status Kelulusan: " + statusKelulusan);
+        console.log("------------------------");
+        
 
 
     </script>
